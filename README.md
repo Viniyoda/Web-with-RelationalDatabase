@@ -25,13 +25,13 @@ CREATE DATABASE joguinhodb;
 USE joguinhodb;
 
 CREATE TABLE usuarios (
-	usuario_id				INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id			INT AUTO_INCREMENT PRIMARY KEY,
     nome_usuario			varchar(100),
     senha_usuario			varchar(100)
 );
 
 CREATE TABLE jogo (
-	jogo_id					INT AUTO_INCREMENT PRIMARY KEY,
+    jogo_id				INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id				INT,
     vida_heroi				DOUBLE,
     vida_vilao				DOUBLE,
