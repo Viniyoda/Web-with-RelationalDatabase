@@ -25,13 +25,13 @@ CREATE DATABASE joguinhodb;
 USE joguinhodb;
 
 CREATE TABLE usuarios (
-    usuario_id			INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id			    INT AUTO_INCREMENT PRIMARY KEY,
     nome_usuario			varchar(100),
     senha_usuario			varchar(100)
 );
 
 CREATE TABLE jogo (
-    jogo_id				INT AUTO_INCREMENT PRIMARY KEY,
+    jogo_id				    INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id				INT,
     vida_heroi				DOUBLE,
     vida_vilao				DOUBLE,
@@ -54,13 +54,13 @@ DELIMITER ;
 ```
 
 ## Prints das Páginas WEB
-- **Login**
+### Login
 ![login](https://github.com/Viniyoda/Web-with-RelationalDatabase/assets/144862427/b6a2acd5-8649-4ebe-b1c2-4980a2609369)
-- **Cadastro**
+### Cadastro
 ![cadastro](https://github.com/Viniyoda/Web-with-RelationalDatabase/assets/144862427/c980dcb9-6188-434a-b3e8-1e78d17d0810)
-- **Jogo**
+### Jogo
 ![joguinho](https://github.com/Viniyoda/Web-with-RelationalDatabase/assets/144862427/27c76578-3698-41d5-b749-61b3082409cd)
-- **Dashboard**
+### Dashboard
 ![dashboard](https://github.com/Viniyoda/Web-with-RelationalDatabase/assets/144862427/6c02d754-0a2a-4902-b0b4-8f3fa1f0a4c7)
 
 ## Link da aplicação online
