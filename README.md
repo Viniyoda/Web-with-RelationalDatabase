@@ -5,6 +5,7 @@ Trabalho de Banco de Dados Relacional 2º semestre - Feito um jogo em HTML, CSS,
 - **Site do Banco de Dados:** https://aiven.io
 - HTML
 - CSS
+- Vue
 - JavaScript
 - NodeJS
 - MySQL
