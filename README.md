@@ -17,6 +17,7 @@ npm install express
 npm install lodash
 npm install mysql
 npm install vue
+npm install body-parser
 ```
 
 ### Comandos SQL
