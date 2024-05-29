@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Jogo Herói e Vilão</title>
+    <link rel="stylesheet" href="/dashboard-style.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>Dashboard</h1>
+        <div class="personagens">
+            <div class="personagem">
+                <h2>Herói</h2>
+                <div>Vida: {{ heroiVida }}%</div>
+                <div>Ação: {{ consoleH }}</div>
+            </div>
+            <div class="personagem">
+                <h2>Vilão</h2>
+                <div>Vida: {{ vilaoVida }}%</div>
+                <div>Ação: {{ consoleV }}</div>
+            </div>
+            <button onclick="history.back()">Joguinho</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                heroiVida: 0,
+                vilaoVida: 0,
+                consoleH: "",
+                consoleV: ""
+            },
+            mounted() {
+                this.fetchCharacterData();
+            },
+            methods: {
+                async fetchCharacterData() {
+                    try {
+                        const response = await fetch('http://localhost:3000/characters');
+                        const data = await response.json();
+                        console.log(data);
+                        this.heroiVida = data.heroi;
+                        this.vilaoVida = data.vilao;
+                        this.consoleH = data.heroiC;
+                        this.consoleV = data.vilaoC;
+                    } catch (error) {
+                        console.error('Erro ao buscar dados dos personagens:', error);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

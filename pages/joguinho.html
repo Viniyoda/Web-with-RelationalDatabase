@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prova - Herói e Vilão</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="personagem" >
+            <div class="barra-vida" :style="{width: heroi.vida + '%'}">{{ heroi.vida }}</div>
+            <div class="sprite"><img src="./blastoise.png" class="pokemon"></div>
+            <h1>Blastoise</h1>
+            <div class="acoes">
+                <button @click="atacar(true)">Atacar</button>
+                <button @click="defender(true)">Defender</button>
+                <button @click="usarPocao(true)">Usar Poção</button>
+                <button @click="especial(true)">Especial</button>
+            </div>
+        </div>
+        <div class="consolebox">
+            <p>Herói: {{ consoleH }}</p>
+            <p>Vilão: {{ consoleV }}</p>
+            <button onclick="window.location.href = '/pages/dashboard.html'">Dashboard</button>
+            <button @click="atualizarVidaERedirecionar">AtualizarDados</button>
+        </div>
+        <div class="personagem" >
+            <div class="barra-vida" :style="{width: vilao.vida + '%'}">{{ vilao.vida }}</div>
+            <div class="sprite"><img src="./charizard.png" class="pokemon"></div>
+            <h1>Charizard</h1>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="/index.js"></script>
