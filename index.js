@@ -40,7 +40,7 @@ createApp({
         async atualizarVidaNoBD() {
             console.log("entramos no atualizarVidaNoBD");
             try {
-                const response = await fetch('http://localhost:3000/atualizarVida', {
+                const response = await fetch('/atualizarVida', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

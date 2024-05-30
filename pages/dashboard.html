@@ -38,7 +38,7 @@
             methods: {
                 async fetchCharacterData() {
                     try {
-                        const response = await fetch('http://localhost:3000/characters');
+                        const response = await fetch('/characters');
                         const data = await response.json();
                         console.log(data);
                         this.heroiVida = data.heroi;
