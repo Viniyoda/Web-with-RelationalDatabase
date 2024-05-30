@@ -1,6 +1,9 @@
 # Web-with-RelationalDatabase
 Trabalho de Banco de Dados Relacional 2º semestre - Feito um jogo em HTML, CSS, Vue conectando ele a um Banco de Dados online utilizando NodeJS, MySQL
 
+## Link da aplicação online
+- https://game-relationaldatabase.onrender.com
+
 ## Utilização da aplicação
 - **Site do Banco de Dados:** https://aiven.io
 - HTML
@@ -64,6 +67,3 @@ DELIMITER ;
 ![joguinho](https://github.com/Viniyoda/Web-with-RelationalDatabase/assets/144862427/27c76578-3698-41d5-b749-61b3082409cd)
 ### Dashboard
 ![dashboard](https://github.com/Viniyoda/Web-with-RelationalDatabase/assets/144862427/6c02d754-0a2a-4902-b0b4-8f3fa1f0a4c7)
-
-## Link da aplicação online
--
